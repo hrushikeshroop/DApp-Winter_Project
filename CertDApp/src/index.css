@@ -1,0 +1,92 @@
+/* index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%; /* Ensures full width */
+  margin: 0;
+  background-color: #f4f4f9;
+  flex-direction: column; /* Stack h1 and container vertically */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 180%; /* Use full width for proper centering */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 180%; /* Ensure it's responsive */
+  max-width: 1400px; /* Max-width for large screens */
+  gap: 20px; /* Space between form containers */
+}
+
+.form-container {
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+}
+
+.form-container label {
+  display: block;
+  margin: 8px 0;
+}
+
+.form-container input {
+  width: 300%; /* Use full width of the container */
+  max-width: 300px; /* Max-width for input fields */
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  background-color: #3a3b3a;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #3a3b3a;
+}
+
+button:hover {
+  background-color: #232323;
+}
+
+button[type="button"]:hover {
+  background-color: #232323;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: flex-start; /* Align elements to the start */
+}
+
+form input {
+  width: 100%;
+  max-width: 300px;
+}
+
+pre {
+  white-space: pre-wrap; /* Ensure text wraps properly */
+  word-wrap: break-word; /* Break words to fit the container */
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  max-width: 300px;
+}
